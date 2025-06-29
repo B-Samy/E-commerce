@@ -1,0 +1,755 @@
+.container-men{
+    display: flex;
+}
+
+
+
+.products-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 2vw;
+    padding: 1vw;
+}
+
+/* Product card */
+.product-card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    width: 85%;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 1vw;
+    background-color: #fff;
+}
+
+/* Image styling */
+.product-card2 img {
+    width: 14vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-bottom: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+/* Product title */
+.product-card2 h3 {
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+    width: 100%;
+    text-align: start;
+}
+
+/* Product price */
+.product-card2 p:nth-of-type(1) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+}
+
+/* Product description */
+.product-card2 p:nth-of-type(2) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.overflow-container{
+    height: 50vw;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+
+
+
+
+/* Women -product css  */
+
+.container-women {
+    display: flex;
+}
+
+
+
+.women-product-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 2vw;
+    padding: 1vw;
+}
+
+/* Product card */
+.women-product-card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    width: 85%;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 1vw;
+    background-color: #fff;
+}
+
+/* Image styling */
+.women-product-card2 img {
+    width: 14vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-bottom: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+/* Product title */
+.women-product-card2 h3 {
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+    width: 100%;
+    text-align: start;
+}
+
+/* Product price */
+.women-product-card2 p:nth-of-type(1) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+}
+
+/* Product description */
+.women-product-card2 p:nth-of-type(2) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.overflow-container {
+    height: 50vw;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+
+
+/* acessories  */
+
+
+/* Container layout */
+.container-accessories {
+    display: flex;
+}
+
+/* Scrollable container */
+.overflow-accessories {
+    height: 50vw;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+/* Grid layout for accessories */
+.products-grid-accessories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 2vw;
+    padding: 1vw;
+}
+
+/* Product card styling */
+.product-card-accessories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    width: 85%;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 1vw;
+    background-color: #fff;
+}
+
+/* Image inside card */
+.product-card-accessories img {
+    width: 14vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-bottom: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+/* Product title */
+.product-card-accessories h3 {
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+    width: 100%;
+    text-align: start;
+}
+
+/* Product price */
+.product-card-accessories p:nth-of-type(1) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+}
+
+/* Product description */
+.product-card-accessories p:nth-of-type(2) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+/* shoes  */
+
+
+
+/* Container layout */
+.container-shoes {
+    display: flex;
+}
+
+/* Scrollable container */
+.overflow-shoes {
+    height: 50vw;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+/* Grid layout */
+.products-grid-shoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 2vw;
+    padding: 1vw;
+}
+
+/* Product card */
+.product-card-shoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    width: 85%;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3, 0.3) 0px 1px 3px -1px;
+    margin: 1vw;
+    background-color: #fff;
+}
+
+/* Image styling */
+.product-card-shoes img {
+    width: 14vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-bottom: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+/* Product title */
+.product-card-shoes h3 {
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+    width: 100%;
+    text-align: start;
+}
+
+/* Product price */
+.product-card-shoes p:nth-of-type(1) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+}
+
+/* Product description */
+.product-card-shoes p:nth-of-type(2) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+/* electronics  */
+
+
+.container-electronics {
+    display: flex;
+}
+
+.overflow-electronics {
+    height: 50vw;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+.products-grid-electronics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 2vw;
+    padding: 1vw;
+}
+
+.product-card-electronics {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    width: 85%;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 1vw;
+    background-color: #fff;
+}
+
+.product-card-electronics img {
+    width: 14vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-bottom: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+.product-card-electronics h3 {
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+    width: 100%;
+    text-align: start;
+}
+
+.product-card-electronics p:nth-of-type(1) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+}
+
+.product-card-electronics p:nth-of-type(2) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+/* watches  */
+
+
+.container-watch {
+    display: flex;
+}
+
+/* Scrollable area for Watch product grid */
+.overflow-watch {
+    height: 50vw;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+/* Grid layout for Watch products */
+.products-grid-watch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 2vw;
+    padding: 1vw;
+}
+
+/* Individual product card */
+.product-card-watch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    width: 85%;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 1vw;
+    background-color: #fff;
+}
+
+/* Product image styling */
+.product-card-watch img {
+    width: 14vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-bottom: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+/* Product name/title */
+.product-card-watch h3 {
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+    width: 100%;
+    text-align: start;
+}
+
+/* Product price */
+.product-card-watch p:nth-of-type(1) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+}
+
+/* Product description */
+.product-card-watch p:nth-of-type(2) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* skincare  */
+
+
+
+.container-skincare {
+    display: flex;
+}
+
+.overflow-skincare {
+    height: 50vw;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+}
+
+.products-grid-skincare {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    padding: 1vw;
+}
+
+.product-card-skincare {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    width: 85%;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: 1vw;
+    background-color: #fff;
+}
+
+.product-card-skincare img {
+    width: 14vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-bottom: 0.5vw;
+    border-radius: 0.5vw;
+}
+
+.product-card-skincare h3 {
+    font-size: 1.5vw;
+    margin: 0.5vw 0;
+    width: 100%;
+    text-align: start;
+}
+
+.product-card-skincare p:nth-of-type(1) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    font-weight: bold;
+}
+
+.product-card-skincare p:nth-of-type(2) {
+    font-size: 1.2vw;
+    margin: 0.3vw 0;
+    width: 100%;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+
+
+/* ============ BASE STYLES ============ */
+
+/* ======= GLOBAL PRODUCT STYLING FOR MEN/WOMEN PAGES ======= */
+
+.container-men,
+.container-women,
+.container-electronics,
+.container-accessories,
+.container-shoes,
+.container-skincare,
+.container-watch {
+    display: flex;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* Sidebar handled separately */
+
+/* Grid container */
+.overflow-container {
+    flex-grow: 1;
+    padding: 3vw;
+}
+
+/* =================== MEN =================== */
+.products-grid2,
+.women-product-grid2,
+.products-grid-electronics,
+.products-grid-accessories,
+.products-grid-shoes,
+.products-grid-skincare,
+.products-grid-watch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+
+.product-card2,
+.women-product-card2,
+.product-card-electronics,
+.product-card-accessories,
+.product-card-shoes,
+.product-card-skincare,
+.product-card-watch  {
+    background-color: #f9f9f9;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card2:hover,
+.women-product-card2:hover,
+.product-card-electronics:hover,
+.product-card-accessories:hover,
+.product-card-shoes:hover,
+.product-card-skincare:hover,
+.product-card-watch:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-card2 img,
+.women-product-card2 img,
+.product-card-electronics img,
+.product-card-accessories img,
+.product-card-shoes img,
+.product-card-skincare img,
+.product-card-watch img {
+    width: 100%;
+    height: 14vw;
+    object-fit: cover;
+    border-radius: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.product-card2 h3,
+.women-product-card2 h3,
+.product-card-electronics h3,
+.product-card-accessories h3,
+.product-card-shoes h3,
+.product-card-skincare h3,
+.product-card-watch h3
+ {
+    font-size: 1.6rem;
+    /* ⬆ increased size */
+    margin: 0.5vw 0;
+}
+
+.product-card2 p,
+.women-product-card2 p,
+.product-card-electronics p,
+.product-card-accessories p,
+.product-card-shoes p,
+.product-card-skincare p,
+.product-card-watch p {
+    font-size: 1.3rem;
+    /* ⬆ increased size */
+    margin: 0.3vw 0;
+    color: #555;
+}
+
+/* ============ MEDIA QUERIES ============ */
+@media (max-width: 768px) {
+    .overflow-container,
+    .overflow-electronics,
+    .overflow-accessories,
+    .overflow-shoes,
+    .overflow-skincare,
+    .overflow-watch  {
+        min-height: 90vh;
+        padding: 2vw;
+    }
+
+    .sidebar.desktop-only {
+        display: none;
+    }
+
+    .products-grid2,
+    .women-product-grid2,
+    .products-grid-electronics,
+    .products-grid-accessories,
+    .products-grid-shoes,
+    .products-grid-skincare,
+    .products-grid-watch {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+    }
+
+    .product-card2,
+    .women-product-card2,
+    .product-card-electronics,
+    .product-card-accessories,
+    .product-card-shoes,
+    .product-card-skincare,
+    .product-card-watch   {
+        width: 46vw;
+        margin-left: -1vw;
+    }
+
+    .product-card2 img,
+    .women-product-card2 img,
+    .product-card-electronics img,
+    .product-card-accessories img,
+    .product-card-shoes img,
+    .product-card-skincare img,
+    .product-card-watch img {
+        height: 60vw;
+        width: 45vw;
+    }
+
+    .product-card2 h3,
+    .women-product-card2 h3,
+    .product-card-electronics h3,
+    .product-card-accessories h3,
+    .product-card-shoes h3,
+    .product-card-skincare h3,
+    .product-card-watch h3 {
+        font-size: 1.6rem;
+        /* ⬆ more readable on mobile */
+    }
+
+    .product-card2 p,
+    .women-product-card2 p,
+    .product-card-electronics p,
+    .product-card-accessories p,
+    .product-card-shoes p,
+    .product-card-skincare p,
+    .product-card-watch p {
+        font-size: 1.5rem;
+        /* ⬆ for price + desc */
+    }
+}
+
+
+
+
+
+
+/* for women  */
+
+
+

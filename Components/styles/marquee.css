@@ -1,0 +1,83 @@
+:root {
+    --color-primary: purple;
+    accent-color: var(--color-primary);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+.Same-img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    margin-block-end: 1rem;
+    font-size: 3rem;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.wrapper {
+    display: grid;
+    place-content: center;
+    height: 50vh;
+}
+
+.marquee {
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(var(--mask-direction, to right),
+            hsl(0 0% 0% / 0),
+            hsl(0 0% 0% / 1) 10%,
+            hsl(0 0% 0% / 1) 90%,
+            hsl(0 0% 0% / 0));
+}
+
+.marquee__ctn {
+    display: flex;
+    width: 100%;
+}
+
+.marquee__track {
+    display: flex;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .marquee__ctn {
+        transform: translate3d(0, 0, 0) scale(1);
+        perspective: 1px;
+    }
+}
+
+.marquee__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 320px;
+    margin-inline-end: 4rem;
+
+    .Same-img {
+        height: 60px;
+        width: 100%;
+        object-fit: contain;
+        backface-visibility: hidden;
+        filter: brightness(100%);
+    }
+}

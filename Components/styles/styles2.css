@@ -1,0 +1,375 @@
+:root {
+  --cards: 3;
+  --cardHeight: 96vh;
+  --cardToppadding: 1.5em;
+  --cardMargin: 4vw;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#cards {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  gap: var(--cardMargin);
+  padding-bottom: calc(var(--cards) * var(--cardToppadding));
+  margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+  --index: 1;
+}
+#card2 {
+  --index: 2;
+}
+
+.card {
+  position: sticky;
+  top: 0;
+  padding-top: calc(var(--index) * var(--cardToppadding));
+}
+
+.niche {
+  min-height: 5vh;
+  width: 100%;
+  background-color: #fff;
+  /* background-color: #000; */
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.niche-div h1 {
+  font-size: 4vw;
+  font-weight: 100;
+  margin: 5vw 0vw 0vw 30vw;
+}
+
+.div-block-superbig {
+  width: 80vw;
+  height: 30vw;
+  background-color: #ecf0f1;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 25vw 0vw 0vw -50vw;
+}
+
+.wears {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  margin: 5vw 0 0 0;
+  position: relative;
+  top: 0.7vw;
+  gap: 5vw;
+  flex-wrap: wrap;
+  color: #000;
+}
+
+.wear-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.wear-item:hover {
+  transform: scale(1.1);
+}
+
+/* Shared hover transition for all icon links */
+.wear-item a {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Icon circle styles */
+
+.shirt-wear {
+  background-color: #c7ecee;
+  padding: 0.7vw;
+  border-radius: 50%;
+  color: #0984e3;
+  border: 2px solid #f7f1e3;
+}
+
+.shirt-wear:hover {
+  background-color: #74b9ff;
+  color: #ffffff;
+}
+
+.pant-wear {
+  background-color: #fbc531;
+  padding: 0.7vw;
+  border-radius: 50%;
+  color: #0c2461;
+  border: 2px solid #f7f1e3;
+}
+
+.pant-wear:hover {
+  background-color: #fed330;
+  color: #2f3640;
+}
+
+.shorts-wear {
+  background-color: #b71540;
+  padding: 0.7vw;
+  border-radius: 50%;
+  color: #f7f1e3;
+  border: 2px solid #f7f1e3;
+}
+
+.shorts-wear:hover {
+  background-color: #e55039;
+  color: #ffffff;
+}
+
+.hoodie-wear {
+  background-color: #341f97;
+  padding: 0.7vw;
+  border-radius: 50%;
+  color: #c8d6e5;
+  border: 2px solid #f7f1e3;
+}
+
+.hoodie-wear:hover {
+  background-color: #5f27cd;
+  color: #ffffff;
+}
+
+.shoes-wear {
+  background-color: #2e86de;
+  padding: 0.7vw;
+  border-radius: 50%;
+  color: #fff;
+  border: 2px solid #f7f1e3;
+}
+
+.shoes-wear:hover {
+  background-color: #1e3799;
+  color: #f1f2f6;
+}
+
+.skirts-wear {
+  background-color: #f368e0;
+  padding: 0.7vw;
+  border-radius: 50%;
+  color: #c8d6e5;
+  border: 2px solid #f7f1e3;
+}
+
+.skirts-wear:hover {
+  background-color: #ff6bcb;
+  color: #ffffff;
+}
+
+.women-wear {
+  background-color: #6d214f;
+  padding: 0.7vw;
+  border-radius: 50%;
+  color: #58b19f;
+  border: 2px solid #f7f1e3;
+}
+
+.women-wear:hover {
+  background-color: #e84393;
+  color: #ffffff;
+}
+
+.label p {
+  margin: 0;
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .wears {
+    gap: 4vw;
+  }
+
+  .label p {
+    font-size: 3vw;
+  }
+
+  .wear-item a {
+    padding: 2vw;
+  }
+}
+
+/* cards  */
+
+.wear-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2vw;
+  padding: 2vw;
+}
+
+.wear-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  height: 42vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.wear-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.wear-card-image {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+.wear-card-content {
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wear-card-content h3 {
+  font-size: 1vw;
+  margin: 0;
+}
+
+.go-button {
+  padding: 0.4vw 1vw;
+  /* z-index: 999999; */
+  /* background-color: #0984e3; */
+  background-color: #b71540;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9vw;
+  transition: background-color 0.3s ease;
+  transition: 0.5s;
+}
+
+.go-button:hover {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  transition: 0.5s;
+}
+
+/* container scroll  */
+
+/* media q niche page  */
+
+/* ===== Responsive Niche Cards With Proper Sizing ===== */
+
+
+
+
+@media (max-width: 768px) {
+
+  .hide-onMobile{
+    display: none;
+  }
+  :root {
+    --cards: 3;
+    --cardHeight: 90vh;
+    --cardToppadding: 1em;
+    --cardMargin: 2vw;
+  }
+
+  .niche{
+    margin: -10vw 0vw 0vw 5vw;
+    width: 90vw;
+  }
+  .container {
+    width: 95%;
+
+  }
+
+  #cards {
+    grid-template-rows: none;
+    gap: 2vw;
+    padding-bottom: 4vw;
+  }
+
+  .card {
+    position: sticky;
+    padding-top: 0;
+  }
+
+  .div-block-superbig {
+    width: 100%;
+    height: auto;
+    margin: 10vw auto 0 auto;
+    padding: 5vw 0;
+  }
+
+  .niche-div h1 {
+    font-size: 6vw;
+    margin: 4vw 0 2vw 10vw;
+    display: none;
+  }
+
+  .wears {
+    justify-content: center;
+    gap: 4vw;
+  }
+
+  .wear-item {
+    width: 25%;
+    margin-bottom: 3vw;
+  }
+
+  .label p {
+    font-size: 3vw;
+  }
+
+  .wear-grid {
+    grid-template-columns: 1fr;
+    gap: 4vw;
+    padding: 4vw;
+  }
+
+  .wear-card {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .wear-card-image {
+      position: relative;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        border-bottom: 1px solid #eee;
+  }
+
+  .wear-card-content {
+    padding: 3vw;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: flex-start;
+  }
+
+  .wear-card-content h3 {
+    font-size: 4vw;
+  }
+
+  .go-button {
+    font-size: 3.5vw;
+    padding: 2vw 4vw;
+  }
+}

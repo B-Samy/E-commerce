@@ -1,0 +1,263 @@
+.container-jitter{
+    min-height: 85vh;
+    background-color: #fff;
+}
+
+
+
+.jitter_id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw 0vw 0vw -50vw ;
+    cursor: pointer;
+}
+
+
+.text-jitter{
+    font-size: 3vw;
+    margin: 3vw 0vw 0vw 15vw ;
+    width: 30vw;
+    text-align: end;
+}
+.bento-jitter{
+    background-color: #d3f31e;
+    padding: .3vw 1vw;
+    color: #111;
+    border-radius: 1vw;
+    transition: .5s;
+}
+
+.bento-jitter:hover{
+    background-color: #000;
+    color: #d3f31e;
+    transition: .5s;
+}
+.video-jitter{
+    width: 40vw;
+    cursor: pointer;
+    border-top-right-radius: 1vw;
+}
+
+.scroller-jitter{
+    /* display: flex; */
+    display: grid;
+    justify-content: center;
+    margin: -35vw 0vw 0vw 30vw;
+    gap: 2vw;
+    height: 35vw;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.image-card-jitter{
+    display: flex;
+}
+
+.jitter-4{
+    font-size: 2.5vw;
+}
+
+.item-jitter .image-card-jitter{
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+cursor: pointer;
+border-radius: .2vw;
+}
+
+.title-jitter{
+    font-size: 2vw;
+    width: 30vw;
+    margin: 1vw 0vw 0vw 0vw;
+}
+
+.desc-jitter{
+        font-size: 1vw;
+        width: 25vw;
+        margin: 1vw 0vw 0vw 0vw ;
+}
+
+.class-button{
+    margin: 1vw 0vw 0vw 0vw;
+    padding: .5vw;
+    text-decoration: none;
+    background-color: #000;
+    outline: none;
+    border: none;
+    border-radius: .2vw;
+    transition: .4s;
+}
+
+.class-child-button{
+    color: #d3f31e;
+    font-size: 1vw;
+    text-decoration: none;
+    transition: .4s;
+
+
+
+}
+
+.class-button:hover{
+    background-color: #fff;
+    border: 2px solid #d3f31e;
+    color: #000;
+    transition: .4s;
+}
+
+.class-child-button:hover{
+    color: #000;
+    transition: .4s;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .container-jitter {
+        min-height: auto;
+        padding: 5vw 2vw;
+    }
+
+    .text-jitter {
+        font-size: 4vw;
+        width: 90vw;
+        text-align: center;
+        margin: 5vw auto 2vw auto;
+    }
+
+    .bento-jitter {
+        padding: 1vw 2vw;
+        border-radius: 2vw;
+    }
+
+    .jitter_id {
+        margin: 2vw auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-jitter {
+        width: 80vw;
+        border-radius: 2vw;
+    }
+
+    .scroller-jitter {
+        margin: 5vw auto;
+        height: auto;
+        max-height: 70vh;
+        overflow-y: scroll;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jitter-4 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .item-jitter {
+        width: 90vw;
+        margin-bottom: 5vw;
+    }
+
+    .title-jitter {
+        font-size: 3vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .desc-jitter {
+        font-size: 2vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .class-button {
+        display: flex;
+        justify-content: center;
+        margin: 2vw auto;
+    }
+
+    .class-child-button {
+        font-size: 1.8vw;
+    }
+}
+
+
+/* Mobile: up to 768px */
+@media screen and (max-width: 768px) {
+
+    .text-jitter {
+        font-size: 5vw;
+    }
+
+    .bento-jitter {
+        font-size: 4vw;
+    }
+
+    .video-jitter {
+        width: 100%;
+    }
+
+    .scroller-jitter {
+        padding: 4vw 2vw;
+        gap: 4vw;
+    }
+
+    .jitter-4 {
+        font-size: 5vw;
+    }
+
+    .title-jitter {
+        font-size: 4vw;
+    }
+
+    .desc-jitter {
+        font-size: 2.5vw;
+    }
+
+    .class-child-button {
+        font-size: 2.5vw;
+    }
+}
+
+
+/* Small Phones: up to 480px */
+@media screen and (max-width: 480px) {
+    .text-jitter {
+        font-size: 6vw;
+    }
+
+    .bento-jitter {
+        font-size: 5vw;
+    }
+
+    .title-jitter {
+        font-size: 5vw;
+    }
+
+    .desc-jitter {
+        font-size: 3vw;
+    }
+
+    .class-child-button {
+        font-size: 3vw;
+    }
+
+    .video-jitter {
+        width: 100%;
+    }
+
+    .item-jitter {
+        width: 100%;
+    }
+}
