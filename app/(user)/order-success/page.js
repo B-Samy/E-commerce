@@ -21,7 +21,7 @@ useEffect(() => {
         </div>
         <h1 className="banana-burst-heading">Success</h1>
         <p className="potato-chip-message">
-          We received your purchase request;<br /> we"ll be in touch shortly!
+          We received your order. Thank you for your order!
         </p>
       </div>
     </div>
