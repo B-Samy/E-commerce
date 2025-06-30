@@ -30,20 +30,9 @@ import { CartContext } from '../context/CartContext';
   role="dialog"
   tabIndex="-1"
 >
-  <button className="cart-close-button" onClick={closeCart}>
+// here cart close items updating 
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className="cart-close-icon"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-
-  </button>
+    
 
   <div className="cart-body">
     <ul className="cart-items">
@@ -100,6 +89,24 @@ import { CartContext } from '../context/CartContext';
 ):(
          <div>
       <Link href="/shop" className="cart-continue-link">Continue shopping</Link> 
+
+       <button className="cart-close-button" onClick={closeCart}>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className="cart-close-icon"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  
+  
+  
         </div>
 )}
     </div>
