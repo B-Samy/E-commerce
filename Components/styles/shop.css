@@ -316,41 +316,38 @@
 }
 
 .remove-btn {
-    margin-top: 0.5rem;
-    background: transparent;
-    border: 1px solid red;
-    color: red;
-    padding: 4px 8px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.85rem;
+  margin-top: 0.5rem;
+  background: transparent;
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
 }
 
 .remove-btn:hover {
-    background: red;
-    color: white;
+  background: #fff;
+  color: #000;
 }
 /* cart update here  */
 
-
 /* add to  cart button  */
 
-
-
-
 .cart-sidebar {
-    position: fixed;
-    top: 75;
-    right: 14vw;
-    height: 65vh;
-    scrollbar-width: none;
-    width: 25vw;
-    background-color: #f3f4f6;
-    border: 1px solid #4b5563;
-    padding: 2rem 1rem;
-    overflow-y: auto;
-    z-index: 9999;
-    box-sizing: border-box;
+  position: fixed;
+  top: 8vw;
+  right: 14vw;
+  height: 75vh;
+  scrollbar-width: none;
+  width: 25vw;
+  background-color: #f3f4f6;
+  border: 1px solid #4b5563;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  z-index: 9999;
+  box-sizing: border-box;
 }
 .cart-close-button {
     position: absolute;
