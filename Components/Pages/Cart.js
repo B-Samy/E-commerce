@@ -30,7 +30,7 @@ import { CartContext } from '../context/CartContext';
   role="dialog"
   tabIndex="-1"
 >
-// here cart close items updating 
+
 
            <button className="cart-close-button" onClick={closeCart}>
 
